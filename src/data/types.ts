@@ -1,23 +1,19 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 export interface Project {
   id: string;
   title: string;
   description: string;
   detailedDescription?: string;
-  category: 'frontend' | 'backend' | 'fullstack' | 'design';
+  category: 'frontend' | 'backend' | 'fullstack' | 'design' | 'manutencao' | 'integracao';
   tags: string[];
-  githubUrl: string;
+  githubUrl?: string;
   liveUrl?: string;
-  featured: boolean;
+  featured?: boolean;
   metrics?: {
     stars?: number;
     forks?: number;
     completedDate?: string;
   };
+  result?: string;
 }
 
 export interface Experience {
@@ -25,19 +21,21 @@ export interface Experience {
   role: string;
   company: string;
   location: string;
-  period: string; // e.g., "Set 2024 - Presente"
+  period: string;
   description: string[];
   skillsUsed: string[];
   current: boolean;
 }
 
+export interface Skill {
+  name: string;
+  level: number;
+}
+
 export interface SkillCategory {
   name: string;
-  iconName: string; // Lucide icon identifier
-  skills: {
-    name: string;
-    level: number; // 0 - 100 percentage
-  }[];
+  iconName: string;
+  skills: string[];
 }
 
 export interface BlogPost {
@@ -52,4 +50,10 @@ export interface BlogPost {
   tags: string[];
   likes: number;
   commentsCount: number;
+}
+
+export interface Service {
+  title: string;
+  description: string;
+  items: string[];
 }

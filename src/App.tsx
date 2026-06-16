@@ -1,66 +1,30 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import React, { useState } from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Blog from './components/Blog';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import ResumeModal from './components/ResumeModal';
+import Header from './components/layout/Header';
+import Hero from './components/sections/Hero';
+import TechStack from './components/sections/TechStack';
+import Services from './components/sections/Services';
+import About from './components/sections/About';
+import Projects from './components/sections/Projects';
+import ProcessWork from './components/sections/ProcessWork';
+import Contact from './components/sections/Contact';
+import Footer from './components/layout/Footer';
 
 export default function App() {
-  const [isResumeOpen, setIsResumeOpen] = useState(false);
-
-  const handleOpenResume = () => {
-    setIsResumeOpen(true);
-  };
-
-  const handleCloseResume = () => {
-    setIsResumeOpen(false);
-  };
-
   return (
-    <div className="min-h-screen flex flex-col bg-brand-dark selection:bg-brand-accent selection:text-white">
-      {/* Sticky header glass node with scroll line indicator */}
-      <Header onOpenResume={handleOpenResume} />
+    <div className="min-h-screen flex flex-col bg-black text-white selection:bg-white selection:text-black">
+      <Header />
 
-      {/* Main visual sections stream */}
       <main className="flex-1">
-        {/* Hero page section with actions & SVG vectors */}
-        <Hero onOpenResume={handleOpenResume} />
-
-        {/* About section with digital services & metric credentials */}
+        <Hero />
+        <TechStack />
+        <Services />
         <About />
-
-        {/* Experience career timeline */}
-        <Experience />
-
-        {/* Projects showcase with active filters & Real GitHub API widget representation */}
         <Projects />
-
-        {/* Technical skills meter matrix cards */}
-        <Skills />
-
-        {/* Legible blog content with interactive filters, likes and mock comments builder */}
-        <Blog />
-
-        {/* Contact submission center with direct copy widgets */}
+        <ProcessWork />
         <Contact />
       </main>
 
-      {/* Corporate footer block with copyright & anchors */}
       <Footer />
-
-      {/* Printer-friendly overlay Curriculum Modal Dialog block */}
-      <ResumeModal isOpen={isResumeOpen} onClose={handleCloseResume} />
     </div>
   );
 }
-
