@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;750&family=JetBrains+Mono:wght@300;400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-dark: #0A0A0A;
+  --color-brand-card: #161616;
+  --color-brand-card-light: #222222;
+  --color-brand-border: #262626;
+  --color-brand-accent: #2563EB;
+  --color-brand-accent-glow: rgba(37, 99, 235, 0.15);
+  --color-brand-cyan: #3b82f6;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-brand-dark);
+}
+
+body {
+  color: #f1f5f9;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-brand-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-accent);
+}
+
+/* Form inputs glow */
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--color-brand-accent);
+  box-shadow: 0 0 10px var(--color-brand-accent-glow);
+}
+
+/* Glassmorphism utility classes */
+.glass-panel {
+  background: rgba(22, 22, 22, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--color-brand-border);
+}
+
+.glass-panel-heavy {
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--color-brand-border);
+}
+

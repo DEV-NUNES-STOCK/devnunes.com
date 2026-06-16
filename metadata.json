@@ -1,0 +1,6 @@
+{
+  "name": "devnunes",
+  "description": "Portfólio profissional para Dev Nunes com blog, exibição de projetos do GitHub, currículo e área de contato.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
