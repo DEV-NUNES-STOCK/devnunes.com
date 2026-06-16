@@ -6,9 +6,9 @@
 import { Project, Experience, SkillCategory, BlogPost } from './types';
 
 export const PERSONAL_INFO = {
-  name: 'Dev Nunes',
-  title: 'Interface Architect & Full Stack Developer',
-  tagline: 'Transformando ideias complexas em soluções digitais inteligentes, interfaces premium e aplicações de altíssima performance.',
+  name: 'Devnunes',
+  title: 'Desenvolvedor Web Full-Stack',
+  tagline: 'Transformando suas necessidades em soluções digitais inteligentes, do planejamento à manutenção contínua',
   bio: 'Especialista em criar ecossistemas web seguros, escaláveis e visualmente impecáveis. Com foco na arquitetura de software limpa, design funcional e carregamento instantâneo, ajudo empresas a solidificarem sua presença digital e otimizarem a experiência de seus usuários.',
   email: 'victoroliv2004@gmail.com', // Filled from user metadata contact
   github: 'https://github.com', // Placeholder or real GitHub root
@@ -18,7 +18,7 @@ export const PERSONAL_INFO = {
   services: [
     {
       title: 'Desenvolvimento Full-Stack',
-      description: 'Sistemas robustos de ponta a ponta utilizando React, Node.js, Next.js e bancos de dados modernos, priorizando segurança e escalabilidade.'
+      description: 'Sistemas robustos de ponta a ponta utilizando, Laravel, React.js, Next.js e bancos de dados modernos, priorizando segurança e escalabilidade.'
     },
     {
       title: 'Soluções Web sob Medida',
