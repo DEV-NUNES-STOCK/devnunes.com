@@ -11,7 +11,7 @@ import Footer from './components/layout/Footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-black text-white selection:bg-white selection:text-black">
+    <div className="min-h-screen flex flex-col bg-background text-foreground selection:bg-primary selection:text-background">
       <Header />
 
       <main className="flex-1">

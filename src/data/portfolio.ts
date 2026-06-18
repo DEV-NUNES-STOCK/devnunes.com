@@ -1,7 +1,7 @@
 import { Project, Experience, SkillCategory, Service } from './types';
 
 export const PERSONAL_INFO = {
-  name: 'Victor Ricardo',
+  name: 'devnunes',
   title: 'Desenvolvedor Full Stack',
   tagline: 'Desenvolvimento Web para empresas e profissionais.',
   subTagline: 'Criação, manutenção e evolução de sistemas web utilizando React, Laravel, Next.js e outras tecnologias modernas.',

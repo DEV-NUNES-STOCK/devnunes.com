@@ -15,31 +15,31 @@ export default function Hero() {
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-balance">
             {PERSONAL_INFO.tagline}
           </h1>
-          <p className="text-xl text-zinc-400 mb-12 max-w-2xl mx-auto leading-relaxed text-balance">
+          <p className="text-xl text-muted mb-12 max-w-2xl mx-auto leading-relaxed text-balance">
             {PERSONAL_INFO.subTagline}
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="#contato"
-              className="w-full sm:w-auto bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-zinc-200 transition-all flex items-center justify-center gap-2"
+              className="w-full sm:w-auto bg-primary text-background px-8 py-4 rounded-full font-semibold hover:bg-primary-hover transition-all flex items-center justify-center gap-2"
             >
               Solicitar orçamento
               <ArrowRight size={18} />
             </a>
             <a
               href="#projetos"
-              className="w-full sm:w-auto border border-white/10 px-8 py-4 rounded-full font-medium hover:bg-white/5 transition-all"
+              className="w-full sm:w-auto border border-border px-8 py-4 rounded-full font-medium hover:bg-foreground/5 transition-all"
             >
               Ver projetos
             </a>
           </div>
 
-          <div className="mt-20 grid grid-cols-1 sm:grid-cols-3 gap-8 border-t border-white/5 pt-12">
+          <div className="mt-20 grid grid-cols-1 sm:grid-cols-3 gap-8 border-t border-border pt-12">
             {PERSONAL_INFO.metrics.map((metric, index) => (
               <div key={index} className="text-center">
-                <div className="text-2xl font-semibold mb-1">{metric.value}</div>
-                <div className="text-sm text-zinc-500 uppercase tracking-widest">{metric.label}</div>
+                <div className="text-2xl font-bold text-primary mb-1">{metric.value}</div>
+                <div className="text-sm text-muted uppercase tracking-widest font-medium">{metric.label}</div>
               </div>
             ))}
           </div>
